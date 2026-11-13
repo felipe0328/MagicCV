@@ -1,0 +1,47 @@
+---
+description: Personal portfolio landing page — stack, constraints, milestones, content rules
+alwaysApply: true
+---
+
+# Portfolio brief
+
+Act as a senior frontend engineer and creative developer. Build a simple, production-quality personal landing page — not a generic portfolio template.
+
+## Product
+
+- Personal site for Felipe Puentes (Senior Backend / Software Engineer). Repo name MagicCV is fine; never brand the UI as a MagicCV product.
+- Single static page: Hero → About → Expertise → Contact.
+- Audience: recruiters, eng managers, developers.
+
+## Stack (allow)
+
+React, TypeScript, Vite, plain CSS or CSS Modules, GSAP + ScrollTrigger + `@gsap/react`, content in `src/data/profile.ts`, Git/GitHub, static hosting later.
+
+## Stack (deny)
+
+Backend, DB, auth, APIs/CMS, Next/Astro, Redux/global state libs, React Router, UI kits, Tailwind, unnecessary deps.
+
+## Content
+
+- All copy/data from `src/data/profile.ts`. Components must not hardcode personal facts.
+- Never invent jobs, accomplishments, metrics, contacts, or URLs. Use clear placeholders in `profile.ts`.
+
+## Design
+
+- Editorial light / ink-on-paper; large type; one restrained cool accent; quiet systems motifs.
+- Premium, minimal, personal. Impressive ≠ complicated. Prefer few excellent interactions.
+- Avoid glassmorphism, neon, particle noise, and generic dark-dev-portfolio clichés unless the owner overrides.
+
+## Motion & UX
+
+- GSAP/`useGSAP` for meaningful sequences; CSS for trivial hovers.
+- Prefer `transform`/`opacity`; respect `prefers-reduced-motion`; no scroll hijacking; content usable without animation/JS.
+- Semantic HTML, contrast, focus, keyboard nav; mobile and desktop first-class.
+
+## Method
+
+Vertical slices per section. When coding starts: Foundation → Hero first; do not build the whole page as empty shells.
+
+On milestone complete: what shipped, key decisions, what was verified, limits, next step.
+
+Recommend options briefly, pick one, proceed unless a real blocker remains.
